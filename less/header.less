@@ -1,0 +1,39 @@
+header {
+    background-color: @bg-color;
+    padding: 20px 0;
+    position: relative;
+
+    .logo-link {
+        display: inline-block;
+    }
+
+    .right-corner {
+        width: 63px;
+        height: 63px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: @bg-color;
+        overflow: hidden;
+        .border-radius-bottom-left(10px);
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -77px;
+            right: 0;
+            border-top: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-bottom: 70px solid #ff8c8c;
+        }
+    }
+
+    .bottom-triangle {
+        position: absolute;
+        top: 63px;
+        right: 0;
+        border-bottom: 55px solid transparent;
+        border-left: 55px solid transparent;
+        border-top: 55px solid rgba(0, 0, 0, 0.3);
+    }
+}

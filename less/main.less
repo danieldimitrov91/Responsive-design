@@ -1,0 +1,646 @@
+/***********************************************************************************************************************
+                       Top slider
+***********************************************************************************************************************/
+.slider-container {
+    background-color: @second-color;
+    text-align: center;
+    padding: 20px 0 35px;
+
+    .header-title {
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+    .header-subtitle {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .owl-pagination {
+        display: none;
+    }
+    .lazyOwl {
+        max-width: 600px;
+        width: 100%;
+        height: 100%;
+    }
+}
+/***********************************************************************************************************************
+                       Smart & Creative
+***********************************************************************************************************************/
+.use-it-container {
+    padding: 30px 0 25px 0;
+    background-color: @link-hover;
+}
+.title-main {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+}
+.subtitle-main {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.try {
+    max-width: 100px;
+    width: 100%;
+}
+.circle-container {
+    padding: 0 20px;
+
+    .circle-1, .circle-2, .circle-3 {
+        background: url("../images/use-it.png") no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .circle-1 {
+        background-position: 0 0;
+    }
+    .circle-2 {
+        background-position: -324px 0;
+    }
+    .circle-3 {
+        background-position: -647px 0;
+    }
+}
+.title {
+    padding: 20px 0 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.subtitle {
+    font-size: 18px;
+    text-align: center;
+}
+/***********************************************************************************************************************
+                       Talented & Experts
+***********************************************************************************************************************/
+.team-container {
+    padding: 30px 0 25px 0;
+    background-color: @green;
+}
+.team-member {
+    padding: 20px 10px 10px;
+    .border-radius-all(5px);
+
+    .circle-avatar {
+        max-width: 140px;
+        padding: 1px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: @green;
+        .box-shadow-inset(0px, 1px, 3px, 0px, #4b8850);
+        .border-radius-all(50%);
+
+        .circle-img {
+            border: 10px solid @green;
+            .border-radius-all(50%);
+        }
+    }
+
+    .team-title {
+        font-size: 21px;
+        padding: 20px 0 10px;
+        text-align: center;
+    }
+    .team-subtitle {
+        font-size: 18px;
+        text-align: center;
+    }
+    .twitter-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: @green;
+        margin-top: 20px;
+        font-size: 25px;
+        position: relative;
+
+        .border-radius-all(5px);
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 40px;
+            height: 30px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -111px 0;
+        }
+    }
+}
+/***********************************************************************************************************************
+                       Elegant & Genuine
+***********************************************************************************************************************/
+.start-up {
+    position: relative;
+
+    &:before {
+        content: '';
+        background-color: @lightgrey;
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+}
+.col-padding {
+    padding-top: 21px;
+}
+.table {
+    .border-radius-all(7px);
+    border: 1px solid #e9e9e9;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .standart {
+        background: url('../images/sprite.png') no-repeat center center;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        background-position: -170px 0;
+        margin-left: -15px;
+        z-index: 1;
+    }
+    .hide-line {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        margin-left: -40px;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+    }
+    .top-col {
+        background-color: #fff;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 20px 20px 30px;
+        position: relative;
+
+        .subtitle-main {
+            letter-spacing: 2px;
+            padding-bottom: 0;
+        }
+    }
+    .middle-col {
+        background-color: @lightgrey;
+    }
+    .table-li {
+        padding: 15px 0;
+        text-align: center;
+        color: @grey;
+        font-size: 18px;
+        border-bottom: 1px solid #d8d8d8;
+        border-top: 1px solid #fff;
+    }
+    .bottom-col {
+        background-color: @grey;
+        border-top: 1px solid #fff;
+        padding: 10px;
+
+        &.bg-red {
+            background-color: @second-color;
+        }
+    }
+    .table-price {
+        width: 60%;
+        float: left;
+        padding-right: 10px;
+        font-weight: bold;
+
+        .price-index {
+            font-size: 65px;
+            padding-left: 12%;
+            position: relative;
+        }
+        .top-index {
+            font-size: 32px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+        .bottom-index {
+            font-size: 25px;
+            position: absolute;
+            top: 30px;
+            right: -48px;
+        }
+    }
+    .table-link {
+        display: block;
+        width: 40%;
+        float: left;
+        background-color: #fff;
+        color: @grey;
+        padding: 9px;
+        text-align: center;
+        margin-top: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        .border-radius-all(5px);
+    }
+}
+.more-p {
+    padding: 30px 0;
+
+    .click {
+        text-decoration: none;
+    }
+}
+/***********************************************************************************************************************
+                       Latest Tweets
+***********************************************************************************************************************/
+.tweets {
+    padding: 30px 0 25px 0;
+    background-color: @second-color;
+
+    .owl-pagination {
+        display: none;
+    }
+}
+.tweet-icon-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.tweet-icon {
+    display: inline-block;
+    background: url('../images/sprite.png') no-repeat center center;
+    height: 30px;
+    width: 30px;
+    background-position: -119px 0;
+}
+.tweet-text {
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 35px;
+    text-align: left;
+}
+/***********************************************************************************************************************
+                       Media Queries Desktop 1320
+***********************************************************************************************************************/
+@media (max-width: 1320px) {
+    .carousel-container {
+        .owl-theme .owl-controls .owl-buttons .owl-prev {
+            left: -64px;
+        }
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            right: -64px;
+        }
+    }
+}
+
+/***********************************************************************************************************************
+                       Media Queries Desktop 1180
+***********************************************************************************************************************/
+@media (max-width: 1180px) {
+    .tweets {
+        .owl-theme .owl-controls .owl-buttons .owl-prev {
+            left: 0;
+        }
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            right: 0;
+        }
+    }
+    .carousel-container {
+        .owl-theme .owl-controls .owl-buttons .owl-prev {
+            left: -40px;
+        }
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            right: -40px;
+        }
+    }
+    .slider-container {
+        .owl-theme .owl-controls .owl-buttons .owl-prev {
+            left: 0;
+        }
+
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            right: 0;
+        }
+    }
+}
+/***********************************************************************************************************************
+                       Media Queries Desktop 1110
+***********************************************************************************************************************/
+@media (max-width: 1110px) {
+    .main-nav {
+        padding-right: 50px;
+    }
+    .carousel-container {
+        .owl-theme .owl-controls .owl-buttons .owl-prev,
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            display: none;
+        }
+    }
+}
+
+/***********************************************************************************************************************
+                       Media Queries Tablet 1025
+***********************************************************************************************************************/
+@media (max-width: 1025px) {
+    .team-member {
+        .team-title {
+            font-size: 20px;
+        }
+        .team-subtitle {
+            font-size: 14px;
+        }
+        .twitter-link {
+             font-size: 21px;
+        }
+        .circle-avatar {
+            max-width: 110px;
+        }
+    }
+    .table {
+        .title-main {
+            font-size: 30px;
+        }
+        .subtitle-main, .table-li {
+            font-size: 20px;
+        }
+    }
+}
+
+/***********************************************************************************************************************
+                       Media Queries Tablet 1024
+***********************************************************************************************************************/
+@media (max-width: 1024px) {
+    .team-member {
+        .team-title {
+            font-size: 1.9vw;
+        }
+        .team-subtitle {
+            font-size: 1.7vw;
+        }
+        .twitter-link {
+             font-size: 2.3vw;
+        }
+        .circle-avatar {
+            max-width: 14vw;
+
+            .circle-img {
+                border-width: 7px;
+            }
+        }
+    }
+    .table {
+        .title-main {
+            font-size: 3.7vw;
+        }
+        .subtitle-main, .table-li {
+            font-size: 2.2vw;
+        }
+    }
+}
+/***********************************************************************************************************************
+                       Media Queries Tablet 960
+***********************************************************************************************************************/
+@media (max-width: 960px) {
+    .title-main {
+        font-size: 30px;
+    }
+    .subtitle-main {
+        font-size: 16px;
+    }
+}
+/***********************************************************************************************************************
+                       Media Queries Tablet 959
+***********************************************************************************************************************/
+@media (max-width: 960px) {
+    .nav-ul .nav-link {
+        padding: 9px 10px;
+    }
+    .team-member .twitter-link {
+        &:after {
+            content: '';
+            top: 12px;
+            left: 12px;
+            width: 25px;
+            height: 20px;
+            background: url("../images/sprite.png") no-repeat;
+            background-position: -25px 0;
+        }
+    }
+    .table {
+        .title-main {
+            font-size: 3.4vw;
+        }
+        .subtitle-main, .table-li {
+            font-size: 2.1vw;
+        }
+
+        .table-price {
+
+            .price-index {
+                padding-left: 15%;
+                font-size: 50px;
+            }
+            .top-index {
+                font-size: 27px;
+                top: 14px;
+            }
+            .bottom-index {
+                font-size: 20px;
+                top: 23px;
+                right: -41px;
+            }
+        }
+        .table-link {
+            margin-top: 2%;
+        }
+    }
+}
+
+/***********************************************************************************************************************
+                        Media Queries Desktop 768
+***********************************************************************************************************************/
+@media (max-width: 768px) {
+    .logo {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .main-nav {
+        padding-right: 0;
+    }
+    .nav-ul {
+        float: none;
+        text-align: center;
+    }
+    .slider-container {
+        .header-title {
+            font-size: 50px;
+        }
+        .owl-theme .owl-controls .owl-buttons .owl-prev,
+        .owl-theme .owl-controls .owl-buttons .owl-next {
+            display: none;
+        }
+    }
+    .circle-container {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto 30px;
+
+        &.last {
+            margin: 0 auto;
+        }
+    }
+
+    .team-member {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto 30px;
+
+        &.last {
+            margin: 0 auto;
+        }
+        .circle-avatar {
+            max-width: 140px;
+
+            .circle-img {
+                border-width: 10px;
+            }
+        }
+        .team-title {
+            font-size: 24px;
+        }
+        .team-subtitle {
+            font-size: 18px;
+        }
+        .twitter-link {
+             font-size: 25px;
+        }
+        .twitter-link {
+            &:after {
+                content: '';
+                top: 10px;
+                left: 10px;
+                width: 40px;
+                height: 30px;
+                background: url("../images/sprite.png") no-repeat;
+                background-position: -111px 0;
+            }
+        }
+    }
+
+    .start-up  {
+        padding-top: 40px;
+
+        &:before {
+            height: 170px;
+        }
+    }
+    .col4.col-padding {
+        padding: 0;
+    }
+    .table {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto 30px;
+
+        .title-main {
+            font-size: 40px;
+        }
+        .subtitle-main {
+            font-size: 20px;
+        }
+        .table-li {
+            font-size: 18px;
+        }
+        .table-price {
+            width: 60%;
+            float: left;
+            padding-right: 10px;
+            font-weight: bold;
+
+            .price-index {
+                font-size: 65px;
+                padding-left: 12%;
+                position: relative;
+            }
+            .top-index {
+                font-size: 32px;
+                position: absolute;
+                top: 20px;
+                left: 0;
+            }
+            .bottom-index {
+                font-size: 25px;
+                position: absolute;
+                top: 30px;
+                right: -48px;
+            }
+        }
+        .table-link {
+            display: block;
+            width: 40%;
+            float: left;
+            background-color: #fff;
+            color: @grey;
+            padding: 9px;
+            text-align: center;
+            margin-top: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            .border-radius-all(5px);
+        }
+    }
+    .tweets .owl-theme {
+        .owl-controls .owl-buttons .owl-prev, .owl-controls .owl-buttons .owl-next {
+            display: none;
+        }
+    }
+    .copyright {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+/***********************************************************************************************************************
+                        Media Queries Desktop 600
+***********************************************************************************************************************/
+@media (max-width: 600px) {
+    .right-corner, .bottom-triangle {
+        display: none;
+    }
+    #toggle_menu {
+        float: none;
+        text-align: center;
+        cursor: pointer;
+    }
+    .nav-ul {
+        height: auto;
+        .nav-li {
+            display: block;
+        }
+    }
+    .google-map {
+        display: none;
+    }
+}
+/***********************************************************************************************************************
+                        Media Queries Desktop 480
+***********************************************************************************************************************/
+@media (max-width: 480px) {
+    .slider-container {
+        .header-title {
+            font-size: 35px;
+        }
+        .header-subtitle {
+            font-size: 16px;
+        }
+    }
+}
+
+/***********************************************************************************************************************
+                        Media Queries Desktop 380
+***********************************************************************************************************************/
+@media (max-width: 380px) {}

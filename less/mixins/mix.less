@@ -1,0 +1,36 @@
+
+/***
+* @time  - time for execution
+*/
+.transition-all(@time) {
+    -webkit-transition: all @time ease-in;
+    -moz-transition: all @time ease-in;
+    transition: all @time ease-in;
+}
+/***
+* @round  - round corners in px
+*/
+.border-radius-all(@round) {
+    -webkit-border-radius: @round;
+    -moz-border-radius: @round;
+    -ms-border-radius: @round;
+    border-radius: @round;
+}
+/***
+* @round  - round corners in px
+*/
+.border-radius-bottom-left(@round) {
+    -webkit-border-bottom-left-radius: @round;
+    -moz-border-bottom-left-radius: @round;
+    -ms-border-bottom-left-radius: @round;
+    border-bottom-left-radius: @round;
+}
+/***
+* @x, @y, @blur, @stroke, @color - inset box shadow
+*/
+.box-shadow-inset(@x, @y, @blur, @stroke, @color) {
+    -webkit-box-shadow: inset @x @y @stroke @color;
+    -moz-box-shadow: inset @x @y @stroke @color;
+    -ms-box-shadow: inset @x @y @stroke @color;
+    box-shadow: inset @x @y @stroke @color;
+}

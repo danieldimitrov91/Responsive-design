@@ -1,0 +1,36 @@
+.nav-ul {
+    height: 52px;
+    float: right;
+
+    .nav-li {
+        display: inline-block;
+        line-height: 52px;
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 9px 13px;
+        color: #fff;
+
+        .border-radius-all(5px);
+        .transition-all(0.2s);
+
+        &:hover {
+            background-color: #232324;
+        }
+    }
+}
+#toggle_menu {
+    padding: 15px 30px;
+    display: none;
+    float: right;
+
+    .menu-icon {
+        background: url('../images/menu.png') no-repeat 100% 100%;
+        background-size: 35px 25px;
+        display: inline-block;
+        height: 30px;
+        width: 40px;
+    }
+}
